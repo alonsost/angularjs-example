@@ -1,0 +1,23 @@
+{
+  "name": "flatlanders-store",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonsost/angularjs_example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alonsost/angularjs_example/issues"
+  },
+  "homepage": "https://github.com/alonsost/angularjs_example#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
