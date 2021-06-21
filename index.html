@@ -21,6 +21,15 @@
                   <p class="mb-1">{{store.products[0].description}}</p>
                   <small ><button  ng-show="store.products[0].canPurchase" class="btn btn-info"> Add to cart</button></small>
                 </a>
+                <br>
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" ng-hide="store.products[1].soldOut">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{store.products[1].name}}</h5>
+                    <small>{{store.products[1].price}}</small>
+                  </div>
+                  <p class="mb-1">{{store.products[1].description}}</p>
+                  <small ><button  ng-show="store.products[1].canPurchase" class="btn btn-info"> Add to cart</button></small>
+                </a>
               </div>
             <hr>
         </div>
