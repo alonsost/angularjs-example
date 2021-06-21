@@ -19,7 +19,7 @@
                     <small>{{store.product.price}}</small>
                   </div>
                   <p class="mb-1">{{store.product.description}}</p>
-                  <small><button class="btn btn-info"> Add to cart</button></small>
+                  <small ><button  ng-show="store.product.canPurchase" class="btn btn-info"> Add to cart</button></small>
                 </a>
               </div>
             <hr>
