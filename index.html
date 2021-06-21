@@ -13,22 +13,13 @@
         <br>
         <div class="row" ng-controller="StoreController as store">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" ng-hide="store.products[0].soldOut">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" ng-repeat="product in store.products" ng-hide="product.soldOut">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{store.products[0].name}}</h5>
-                    <small>{{store.products[0].price}}</small>
+                    <h5 class="mb-1">{{product.name}}</h5>
+                    <p class="h4">{{product.price | currency}}</p>
                   </div>
-                  <p class="mb-1">{{store.products[0].description}}</p>
-                  <small ><button  ng-show="store.products[0].canPurchase" class="btn btn-info"> Add to cart</button></small>
-                </a>
-                <br>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" ng-hide="store.products[1].soldOut">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{store.products[1].name}}</h5>
-                    <small>{{store.products[1].price}}</small>
-                  </div>
-                  <p class="mb-1">{{store.products[1].description}}</p>
-                  <small ><button  ng-show="store.products[1].canPurchase" class="btn btn-info"> Add to cart</button></small>
+                  <em class="mb-1">{{product.description}}</em>
+                  <small ><button  ng-show="product.canPurchase" class="btn btn-info"> Add to cart</button></small>
                 </a>
               </div>
             <hr>
