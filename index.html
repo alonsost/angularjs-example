@@ -13,13 +13,13 @@
         <br>
         <div class="row" ng-controller="StoreController as store">
             <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" ng-hide="store.product.soldOut">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" ng-hide="store.products[0].soldOut">
                   <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{store.product.name}}</h5>
-                    <small>{{store.product.price}}</small>
+                    <h5 class="mb-1">{{store.products[0].name}}</h5>
+                    <small>{{store.products[0].price}}</small>
                   </div>
-                  <p class="mb-1">{{store.product.description}}</p>
-                  <small ><button  ng-show="store.product.canPurchase" class="btn btn-info"> Add to cart</button></small>
+                  <p class="mb-1">{{store.products[0].description}}</p>
+                  <small ><button  ng-show="store.products[0].canPurchase" class="btn btn-info"> Add to cart</button></small>
                 </a>
               </div>
             <hr>
